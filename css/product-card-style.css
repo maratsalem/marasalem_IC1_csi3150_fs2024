@@ -1,3 +1,4 @@
+/* Reset default margins and paddings, set box-sizing and font */
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +10,9 @@ body {
   background-color: black;
 }
 
+/* Main product card container styling */
 .product-card {
-  margin-top: 120px;
+  margin-top: 120px; /* Space from the top */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,50 +20,58 @@ body {
   height: 500px;
 }
 
+/* Styling for the left image column */
 .product-card .left-img-col img {
   width: 400px;
   height: 500px;
-  object-fit: cover;
+  object-fit: cover; /* fill entire left-div with image */
 }
 
+/* Styling for the right info column */
 .product-card .right-info-col {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* vertical align */
   align-items: left;
   justify-content: center;
   padding: 20px 20px 20px 20px;
-  background-color: white;
+  background-color: white; /* background for desc */
   width: 400px;
   height: 500px;
 }
 
+/* Title styling */
 .product-card .right-info-col h3 {
   font-size: 32px;
   color: black;
-  text-align: left;
+  text-align: left; /* Align text to the left */
 }
 
+/* Subtitle styling */
 .product-card .right-info-col h5 {
   margin-top: 15px;
   font-size: 18px;
   color: lightgrey;
-  text-align: left;
+  text-align: left; /* Align text to the left */
 }
 
+/* Center information container */
+/* for moving paragraph over, propably could've applied this to p directly...maybe */
 .product-card .right-info-col .center-info {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
+  margin-left: 50px; /* Space on the left */
 }
 
+/* Paragraph styling */
 .product-card .right-info-col p {
   font-size: 14px;
-  text-align: left;
+  text-align: left; /* Align text to the left */
 }
 
+/* Available colors section */
 .product-card .right-info-col .available-colors {
   margin-left: 15px;
   margin-top: 50px;
@@ -71,6 +81,7 @@ body {
   justify-content: space-evenly;
 }
 
+/* Color container styles */
 .product-card .right-info-col .available-colors .black-color-container,
 .red-color-container,
 .white-color-container {
@@ -79,6 +90,7 @@ body {
   border-radius: 50%;
 }
 
+/* Specific color styling */
 .black-color-container {
   background-color: black;
 }
@@ -89,9 +101,10 @@ body {
 
 .white-color-container {
   background-color: rgb(247, 247, 224);
-  outline: 2px solid rgba(247, 247, 224, 1);
+  outline: 2px solid rgba(247, 247, 224, 1); /* makes it visible */
 }
 
+/* Price section styling */
 .product-card .right-info-col .price {
   margin-top: 50px;
   display: flex;
@@ -99,15 +112,17 @@ body {
   justify-content: space-between;
 }
 
+/* Price font styling */
 .product-card .right-info-col .price h4 {
   font-size: 32px;
 }
 
+/* Buy button styling */
 .buy-btn {
   width: 150px;
   height: 40px;
   border-radius: 50px;
-  border: none; /* No border */
+  border: none;
   color: white;
   background-color: black;
 }
