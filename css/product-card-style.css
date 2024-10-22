@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.product-card {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 500px;
+}
+
+.product-card .left-img-col img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.product-card .right-info-col {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+  width: 400px;
+  height: 500px;
+}
+
+.product-card .right-info-col h3 {
+  font-size: 32px;
+  color: black;
+  text-align: left;
+}
+
+.product-card .right-info-col h5 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: lightgrey;
+  text-align: left;
+}
+
+.product-card .right-info-col .center-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.product-card .right-info-col p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.product-card .right-info-col .available-colors {
+  margin-left: 15px;
+  margin-top: 50px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.product-card .right-info-col .available-colors .black-color-container,
+.red-color-container,
+.white-color-container {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.black-color-container {
+  background-color: black;
+}
+
+.red-color-container {
+  background-color: red;
+}
+
+.white-color-container {
+  background-color: rgb(247, 247, 224);
+  outline: 2px solid rgba(247, 247, 224, 1);
+}
+
+.product-card .right-info-col .price {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card .right-info-col .price h4 {
+  font-size: 32px;
+}
+
+.buy-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  border: none; /* No border */
+  color: white;
+  background-color: black;
+}
